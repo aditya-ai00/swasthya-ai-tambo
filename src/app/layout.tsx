@@ -1,5 +1,5 @@
+import "./globals.css";
 import { TamboProvider } from "@tambo-ai/react";
-import "@/app/globals.css";
 
 export default function RootLayout({
   children,
@@ -9,9 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen bg-white text-black">
-        <TamboProvider
-          apiKey={process.env.NEXT_PUBLIC_TAMBO_API_KEY!}
-        >
+        <TamboProvider>
           {children}
         </TamboProvider>
       </body>
