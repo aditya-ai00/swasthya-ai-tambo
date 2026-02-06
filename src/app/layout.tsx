@@ -1,8 +1,5 @@
-"use client";
-
-import "./globals.css";
 import { TamboProvider } from "@tambo-ai/react";
-import { tools } from "@/lib/tambo";
+import "@/app/globals.css";
 
 export default function RootLayout({
   children,
@@ -13,9 +10,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="min-h-screen bg-white text-black">
         <TamboProvider
-          apiKey={process.env.NEXT_PUBLIC_TAMBO_API_KEY ?? "demo"}
-          tools={tools}
-          mcpServers={[]}
+          apiKey={process.env.NEXT_PUBLIC_TAMBO_API_KEY!}
         >
           {children}
         </TamboProvider>
