@@ -1,11 +1,19 @@
 "use client";
 
-import { ThreadContentMessages } from "@/components/tambo/thread-content";
+import {
+  Thread,
+  ThreadContent,
+  ThreadMessages,
+  ThreadInput,
+} from "@tambo-ai/react";
 
 export default function InteractablesPage() {
   return (
-    <div className="p-6">
-      <ThreadContentMessages />
-    </div>
+    <Thread>
+      <ThreadContent>
+        <ThreadMessages />
+        <ThreadInput />
+      </ThreadContent>
+    </Thread>
   );
 }
