@@ -23,6 +23,7 @@ export default function ChatPage() {
               <ThreadInput />
             </ThreadContent>
           </Thread>
+          
         </div>
       </div>
     </div>
