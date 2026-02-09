@@ -1,3 +1,8 @@
 // src/lib/tambo.ts
 
-export {};
+import { healthTool } from "@/services/health-tool";
+
+// Tools are auto-registered by Tambo Cloud
+export const tools = {
+  healthTool,
+};
