@@ -1,8 +1,10 @@
-// src/lib/tambo.ts
+import { createTambo } from "@tambo-ai/react";
 
-import { healthTool } from "@/services/health-tool";
-
-// Tools are auto-registered by Tambo Cloud
-export const tools = {
-  healthTool,
-};
+export const tambo = createTambo({
+  systemPrompt: `
+You are Swasthya AI, a rural health assistant for India.
+You provide simple, safe, non-diagnostic health guidance.
+You always remind users to consult a doctor for serious symptoms.
+Use very simple language.
+`,
+});
