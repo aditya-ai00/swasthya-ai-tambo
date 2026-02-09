@@ -1,7 +1,5 @@
-"use client";
-
-import { TamboProvider } from "@tambo-ai/react";
 import "./globals.css";
+import { TamboProvider } from "@tambo-ai/react";
 
 export default function RootLayout({
   children,
